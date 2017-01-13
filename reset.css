@@ -1,0 +1,67 @@
+﻿/* reset */
+@charset "utf-8";
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    outline:none;
+   /* -webkit-overflow-scrolling: touch;*/
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #424242;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+body{width:100%;height:100%; min-width:320px;}
+html, body {  -webkit-user-select: none;  overflow-x: hidden;  }
+img { display: block;  border: none;  }
+ul, li {
+    list-style: none;
+}
+html {
+    /*--设置REM参考的基本值(根值):默认字体大小是16px,我们设置根植为10px,也就是相当于原有的62.5%--*/
+    /*--此处的根值其实就是10px,也就相当于1REM的值就是10px--*/
+    font-size: 62.5%;
+}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+select,input{border:none;}
+
+.clear{clear:both}
+.fl{float:left;}
+.fr{float:right;}
+.ph{margin-top:1rem;}
+.ht{height:2rem;}
+.pt{margin-bottom:1rem; overflow: hidden}
+/* link */
+a{color:#424242;text-decoration:none;}
+a:hover{text-decoration:none;}
+.contents{padding-bottom: 2rem;}
+
+/*头部公共样式*/
+.m-header .data-nav { position: fixed; left: 0; top: 0; z-index: 1;  width: 100%;   overflow: hidden;
+}
+.m-header .data-nav h2{height: 4.4rem; position: relative; line-height: 4.4rem; text-align: center; font-size: 1.6rem;color: #fff; font-weight: normal; background: #019ddd;  }
+.m-header .data-nav h2>span{position: absolute; right:1.5rem; top:0rem; }
+.m-header .data-nav h2  .m-question span{}
+.m-header .data-nav h2  i{position:absolute; right:1rem; top:0rem;width:2.2rem; height:2.2rem;     margin: 1rem 0rem 0 0;background:url("../images/nav-icon2.png") no-repeat right center; background-size: 2.2rem 2.2rem;}
+.m-header .data-nav h2 span a{color:#fff; font-size: 1.4rem; width: 100%; height: 100%; display:inline-block;}
+.m-header .data-nav h2 .more{background: url("../images/more.png") no-repeat center center;display: inline-block; float: left; background-size:.8rem 1.6rem; width:3rem; height:3rem; position: absolute; left:1.3rem;top: 0.7rem; }
+
+
